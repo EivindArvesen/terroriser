@@ -1,0 +1,126 @@
+<html>
+<head>
+<title>Terroriser</title>
+<meta name="description" content="Why the Counter-Terrorism and Border Security Bill is a bad idea"/>
+<!--
+<link rel="preload" href="https://clarionproject.org/factsheets-files/islamic-state-magazine-dabiq-fifteen-breaking-the-cross.pdf" as="fetch" crossorigin>
+<link rel="preload" href="https://pbs.twimg.com/media/DzgmCSjXQAAF33w.jpg" as="image" crossorigin>
+-->
+<style>
+body {
+    background-color: linen;
+    font-size: 16px;
+    margin: 3em 0;
+}
+
+h1 {
+    font-size: 2.4em;
+    color: maroon;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+h1 small {
+    font-size: 0.6em;
+}
+
+.lead {
+    margin-bottom: 1.5em;
+    color: limegreen;
+}
+
+.warning {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    background: repeating-linear-gradient(
+      -45deg,
+      #333333,
+      #333333 10px,
+      #CCCC00 10px,
+      #CCCC00 20px
+    );
+}
+
+.blink {
+    left: 50%;
+    right: 50%;
+    display: inline-block;
+    margin: 0 auto;
+    color: yellow;
+    text-shadow: 0 0 10px #000;
+    font-size: 3em;
+    font-weight: bold;
+    animation-duration: 0.5s;
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    51% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+h2 {
+    color: aqua;
+}
+
+code {
+    display: block;
+    background-color: #dadada;
+    padding: 2em;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 1em 3em;
+    width: 80%;
+    max-width: 640px;
+    background-color: #fff;
+    color: #333;
+}
+
+footer {
+    color: olive;
+    text-align: center;
+    margin: 2em 0 2em 0;
+}
+</style>
+</head>
+<body>
+<section class="container">
+<h1>Consider yourself terrorised<br /><small class="lead">Before you've even read this sentence, your browser has downloaded ISIS propaganda in the background.</small></h1>
+</section>
+<div class="warning">
+<p class="blink">U wot, M8?!</p>
+</div>
+<section class="container">
+<p><big>... no, not really.<br />
+<em>But it easily could have.</em></big></p>
+<p><br />If you inspect this page, you'll see the following in the document header</p>
+<code>
+&lt;!--<br />
+&lt;link rel=&quot;preload&quot; href=&quot;https://clarionproject.org/factsheets-files/islamic-state-magazine-dabiq-fifteen-breaking-the-cross.pdf&quot; as=&quot;fetch&quot; crossorigin&gt;<br />
+&lt;link rel=&quot;preload&quot; href=&quot;https://pbs.twimg.com/media/DzgmCSjXQAAF33w.jpg&quot; as=&quot;image&quot; crossorigin&gt;<br />
+--&gt;
+</code>
+<p>If the top and bottom lines were removed, your browser would have downloaded the linked ISIS propaganda in the form of a PDF and an image.</p>
+<p>To your computer, or anyone monitoring your traffic, this is ostensibly the same as you "manually" (willfully) downloading the same resource.</p>
+<p>For more information, see <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Preloading_content">this MDN-page</a>.</p>
+<h2>Why?</h2>
+<p>This dumb page was created to demonstrate just how ineffective, abusable and downright stupid <a href="https://www.theregister.co.uk/2019/02/13/uk_counter_terror_act_royal_assent/">this new UK law</a> is, which makes viewing terrorist propaganda even once an offence punishable by a prison sentence of up to 15 years.</p>
+</section>
+<footer>Made with &hearts; by <a href="https://github.com/eivind88">Eivind</a></footer>
+</body>
+</html>
